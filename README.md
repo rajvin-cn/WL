@@ -16,6 +16,22 @@ To install Python:
 4. **Important (Windows users):** Make sure to check **"Add Python to PATH"** during installation.
 5. Complete the installation and restart your terminal if needed.
 
+### Quick version check after installing
+
+Once the installer finishes, open a terminal or command prompt and run:
+
+```bash
+python --version
+```
+
+On macOS or Linux you may need:
+
+```bash
+python3 --version
+```
+
+You should see output like `Python 3.12.4`. If you do, the installation was successful and Python is on your PATH.
+
 ### Installation Screenshot
 
 The image below shows the Python installer with the **"Add Python to PATH"** option highlighted — make sure this box is checked before clicking Install Now.
@@ -26,10 +42,17 @@ The image below shows the Python installer with the **"Add Python to PATH"** opt
 
 ## 2. Verify Python Installation
 
-After installing Python, open a terminal or command prompt and run:
+After installing Python, open a terminal or command prompt and run the following commands to fully confirm your setup:
 
 ```bash
+# Check Python version
 python --version
+
+# Check where Python is installed
+python -c "import sys; print(sys.executable)"
+
+# Check all version details
+python -c "import sys; print(sys.version)"
 ```
 
 ### Verification Screenshot
